@@ -11,7 +11,7 @@ $ npm install openbd
 
 ## Usage
 ```javascript
-require('../lib/openbd');
+require('openbd');
 let openbd = new openBD();
 
 /*
