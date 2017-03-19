@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/gennei/.nodebrew/node/v7.7.2/bin/node',
+1 verbose cli   '/Users/gennei/.nodebrew/current/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/gennei/github/openbd',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/gennei/.npm/gennei/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/gennei/.npm correctMkdir not in flight; initializing
+10 verbose makeDirectory /Users/gennei/.npm creation not in flight; initializing
+11 silly makeDirectory /Users/gennei/.npm uid: 501 gid: 20
+12 info lifecycle gennei@0.0.1~prepublish: gennei@0.0.1
+13 silly lifecycle gennei@0.0.1~prepublish: no script for prepublish, continuing
+14 info lifecycle gennei@0.0.1~prepare: gennei@0.0.1
+15 silly lifecycle gennei@0.0.1~prepare: no script for prepare, continuing
+16 verbose tar pack [ '/Users/gennei/.npm/gennei/0.0.1/package.tgz',
+16 verbose tar pack   '/Users/gennei/github/openbd' ]
+17 verbose tarball /Users/gennei/.npm/gennei/0.0.1/package.tgz
+18 verbose folder /Users/gennei/github/openbd
+19 verbose addLocalTarball adding from inside cache /Users/gennei/.npm/gennei/0.0.1/package.tgz
+20 verbose correctMkdir /Users/gennei/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd gennei@0.0.1
+22 verbose afterAdd /Users/gennei/.npm/gennei/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/gennei/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/gennei/.npm/gennei/0.0.1/package/package.json written
+25 silly publish { name: 'gennei',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: 'openbd',
+25 silly publish   main: 'index.js',
+25 silly publish   scripts: {},
+25 silly publish   keywords: [ 'openbd', 'bibliography' ],
+25 silly publish   repository: { type: 'git', url: 'git+https://github.com/gennei/openbd.git' },
+25 silly publish   author: { name: 'gennei' },
+25 silly publish   license: 'MIT',
+25 silly publish   devDependencies: { request: '^2.81.0' },
+25 silly publish   readme: '# openBD\n\n## insatll\n\n```sh\n$ npm install openbd\n```\n\n## Usage\n```javascript\nrequire(\'../lib/openbd\');\nlet openbd = new OpenBD();\n\n/*\n * 1件だけ取得\n */\nopenbd.get(\'4088810023\', function(err, response, body) {\n  console.log(body);\n});\n\n/*\n * 複数件取得\n */\nopenbd.get(new Array(\'4088810023\', \'4088725093\'), function(err, response, body) {\n  console.log(body);\n});\n```\n\n## License\nMIT\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '8194839ae6322332d3767410719b5a805fa5a931',
+25 silly publish   bugs: { url: 'https://github.com/gennei/openbd/issues' },
+25 silly publish   homepage: 'https://github.com/gennei/openbd#readme',
+25 silly publish   _id: 'gennei@0.0.1',
+25 silly publish   _shasum: '07fb2f2c88c09b63a35d8306ab29ee46a922f28c',
+25 silly publish   _from: '.' }
+26 info lifecycle gennei@0.0.1~prepublishOnly: gennei@0.0.1
+27 silly lifecycle gennei@0.0.1~prepublishOnly: no script for prepublishOnly, continuing
+28 verbose getPublishConfig undefined
+29 silly mapToRegistry name gennei
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'gennei',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   escapedName: 'gennei',
+32 silly mapToRegistry   name: 'gennei',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/gennei
+34 verbose publish registryBase https://registry.npmjs.org/
+35 silly publish uploading /Users/gennei/.npm/gennei/0.0.1/package.tgz
+36 verbose request uri https://registry.npmjs.org/gennei
+37 verbose request sending authorization for write operation
+38 info attempt registry request try #1 at 13:00:16
+39 verbose request using bearer token for auth
+40 verbose request id 77e555da0c5f1602
+41 http request PUT https://registry.npmjs.org/gennei
+42 http 403 https://registry.npmjs.org/gennei
+43 verbose headers { 'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   'content-length': '95',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   date: 'Sun, 19 Mar 2017 04:00:17 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-itm7420-ITM',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1489896016.218932,VS0,VE790',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 verbose request invalidating /Users/gennei/.npm/registry.npmjs.org/gennei on PUT
+45 error publish Failed PUT 403
+46 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : gennei
+46 verbose stack     at makeError (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+46 verbose stack     at Request._callback (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+46 verbose stack     at Request.self.callback (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/request/request.js:186:22)
+46 verbose stack     at emitTwo (events.js:106:13)
+46 verbose stack     at Request.emit (events.js:194:7)
+46 verbose stack     at Request.<anonymous> (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+46 verbose stack     at emitOne (events.js:96:13)
+46 verbose stack     at Request.emit (events.js:191:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/Users/gennei/.nodebrew/node/v7.7.2/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+47 verbose statusCode 403
+48 verbose pkgid gennei
+49 verbose cwd /Users/gennei/github/openbd
+50 error Darwin 16.4.0
+51 error argv "/Users/gennei/.nodebrew/node/v7.7.2/bin/node" "/Users/gennei/.nodebrew/current/bin/npm" "publish"
+52 error node v7.7.2
+53 error npm  v4.1.2
+54 error code E403
+55 error "You cannot publish over the previously published version 0.0.1." : gennei
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
