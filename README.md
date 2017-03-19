@@ -1,4 +1,7 @@
-# openBD
+# OpenBD
+
+https://openbd.jp/
+
 
 ## insatll
 
