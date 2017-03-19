@@ -1,4 +1,4 @@
-# OpenBD
+# openBD
 
 https://openbd.jp/
 
@@ -12,7 +12,7 @@ $ npm install openbd
 ## Usage
 ```javascript
 require('../lib/openbd');
-let openbd = new OpenBD();
+let openbd = new openBD();
 
 /*
  * 1件だけ取得
