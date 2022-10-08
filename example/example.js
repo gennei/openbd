@@ -1,5 +1,4 @@
-require('../lib/openbd');
-let openbd = new openBD();
+const openbd = require('../');
 
 /*
  * 1件だけ取得
